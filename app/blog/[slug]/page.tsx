@@ -1,19 +1,16 @@
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
+// type Params = {
+//   params: {
+//     slug: string;
+//   };
+// };
 
-export async function generateMetadata({ params }: PageProps) {
-  return { title: `Post: ${params.slug}` };
-}
+// export async function generateMetadata({ params }: Params) {
+//   return { title: `Post: ${params.slug}` };
+// }
 
-export default function Page({ params }: PageProps) {
-  return (
-    <>
-      <h1>Slug: {params.slug}</h1>
-      <p>HoleTex</p>
-      <p>Welcome to Cần Thơ</p>
-    </>
-  );
+export default function Page() {
+  return <>
+    <p>HoleTex</p>
+    <p>Welcome to Cần Thơ</p>
+  </>;
 }
